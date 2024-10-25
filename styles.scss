@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('woff');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.country-input{
+    background-image: url(/assets/collage-of-world-travel-images-with-various-destinations-in-various-KAJNAH.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(black, transparent);
+        opacity: 80%;
+        z-index: 2;
+    }
+}
+
+
+.country-input-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    z-index: 3;
+    margin-bottom: 1.5rem;
+}
+.country-input-box{
+    margin-left: 13rem;
+    z-index: 3;
+    height: 10vh;
+    width: 70%;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: darkgray;
+    text-align: center;
+}
+
+#searchButton{
+    z-index: 3;
+    width: 20%;
+    margin: 2rem auto;
+    color: darkgray;
+    background-color: white;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    
+
+    
+}
+
+.info-section{
+    background-color: black;
+    color: white;
+    padding-top: 3rem;
+}
+
+.info-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.card-title{
+    margin-bottom: 2rem;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 80vh;
+    padding-bottom: 2rem;
+    
+    
+    #cardBuilding {
+        border: solid 2px white;
+        border-radius: 4%;
+        padding-top: 2rem;
+        text-align: center;
+        width: 40%;
+        font-size: 2rem;
+
+        .cardBuilding__subsection {
+            width: 100%;
+            border-top: solid 2px white;
+
+            p {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+
+            .cardBuilding__subsection--info {
+                width: auto;
+                font-weight: 400;
+                margin-top: 2rem;
+            }
+
+        }
+    }
+}
+
+.flag{
+    height: 20vh;
+    border: 0.001rem solid white;
+}

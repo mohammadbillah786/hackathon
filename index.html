@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>Countries Galore </title>  
+</head>
+<body>
+    <form class="country-input">
+        <label class="country-input-title" for="countryInput">What Country are you planning on travelling to?</label><br>
+        <input class="country-input-box" type="text" id="countryInput" placeholder="What Country are You Travelling to?" name="countryInput">
+        <button id="searchButton" class="country-input__button" event="submit" onClick="document.querySelector('.info-section').scrollIntoView();">Search</button>
+        <div class="country-input__overlay"></div>  
+    </form> 
+    <article class="info-section">
+        <h2 class="info-title">Here are the Specifics of the Country Searched</h2>
+        <div class="info-cards">
+            <div id="cardBuilding">
+                <h3 class="card-title"> Capital</h3>
+                <div class="cardBuilding__subsection">
+                  
+                    <p class="cardBuilding__subsection--info capital"> </p>
+                </div>
+            </div>
+            <div id="cardBuilding">
+                <h3 class="card-title"> Currency </h3>
+                <div class="cardBuilding__subsection">
+                   
+                    <p class="cardBuilding__subsection--info currency">  </p>
+                </div>
+            </div>
+            <div id="cardBuilding">
+                <h3 class="card-title"> Languages </h3>
+                <div class="cardBuilding__subsection">
+                 
+                    <p class="cardBuilding__subsection--info languages">  </p>
+                </div>
+            </div>
+            <div id="cardBuilding">
+                <h3 class="card-title"> Flag </h3>
+                <div class="cardBuilding__subsection">
+                  
+                    <img class="cardBuilding__subsection--info flag">  
+                </div>
+            </div>
+ 
+        </div>
+
+
+    </article>
+
+</body>
+</html>
